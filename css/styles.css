@@ -1,0 +1,222 @@
+html {
+    background: url(../images/Turtle-cliff-beach.jpg) no-repeat top left fixed;
+    background-size: cover;  
+    Background-image: linear-gradient(to right, #ff000000, #D5D3D9), url(../images/Turtle-cliff-beach.jpg);
+}
+
+body {
+    font-family: 'Schoolbell', cursive;   
+    font-size: 1.5em;
+    color:#0e0e62;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;    
+}
+
+a:link {
+    color: #0e0e62;
+}
+
+a:visited {
+    color:#7A896C;
+}
+
+a:active {
+    color: #D5D3D9;
+}
+
+a:hover {
+    box-shadow: inset 3em 0 0 0 #D5D3D9;
+}
+/*!!Can I make a unique cursor using a photo? or find a shell shaped one? */
+
+article {
+    padding: 1em;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
+
+h1 {
+    color: #BF9CA4;
+    font-size: 0.8em;
+    list-style: none;
+}
+
+h2 {
+    color: #7A896C;
+    font-size: 1em;
+    padding: 1em;
+}
+
+p {
+    text-align: center;
+    color: palevioletred;
+}
+
+.topnav {
+    font-size: 0.5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#header-component {
+    font-family: 'Rock Salt', cursive;
+    color: #BF9CA4;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;  
+}
+
+#main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;    
+    max-width: 20em;
+    padding-left: 2em;
+}
+
+#my-footer {    
+    color: #0e0e62;
+    background-color: lightgray;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 0.5em;    
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    }
+/*note: images used for buttons are easier to manage in html than as background images in css. image for shell button now in html
+BUT NOW I HAVE LOST TEXT LABLLING THE BUTTON - HOW DO I GET IT BACK?*/
+#shell-btn {
+    color:#320E3B;   
+    text-align: center;
+    font-weight: bold;
+    height: 5em;
+    width: 5em;    
+    border: 0.25em dotted palevioletred;
+    opacity: 1;    
+    border-radius: 50%;     
+    margin: 2em; 
+}
+/*#shell-link {
+   figure out how tp turn off or change a hover for this button
+
+}*/
+
+#shell-choice {   
+    border: none;
+    margin: 2em;
+    padding: 1em;
+}
+/*game styling*/
+
+
+#game {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+#result {
+    width: 20em;
+    height: 3em;
+    font-size: 1.5em;
+    color: #0275d8;
+    text-align: left;
+}
+
+#restart {
+    color:#320E3B;
+    background-color: paleturquoise;
+    border: none;
+    border-radius: 15%;
+    font-size: 2em;
+    padding: 1em;
+    max-width: 10em;
+}
+
+#restart:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+}
+
+#board {
+	width: 20em;
+	height: 20em;
+    margin-left: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2em;
+    background-image: url(/images/tttboard.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+    box-shadow: 0 0 2em 1em #320E3B;   
+}
+
+#board:hover {
+    cursor: pointer;
+}
+
+.circle {
+    background-image: url(/images/game\ o.jpg);
+}
+
+.cross {
+    background-image: url(/images/game\ x.jpg);
+}
+
+.circle,.cross {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.game-title {
+    font-size: 3em;
+    padding: 1em;
+}
+#game-access {
+    color: palevioletred;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+
+    header {
+        font-size: 1em;         
+    }
+
+    #main {
+        display: flex;
+        flex-flow: wrap-reverse row;
+        max-width: 100%;
+        padding: 2em;
+    }
+    
+}
+
+/*
+Colour palette
+Light
+Tuscany (muted pink) #BF9CA4
+Light Gray #D5D3D9
+Xanadu (olive green)#7A896C
+Dark
+Russian Violet #320E3B
+Prussian Blue #003052*/
