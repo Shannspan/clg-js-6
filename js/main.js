@@ -1,3 +1,22 @@
+//Lesson 6 code along examples using the DOM to change style
+document.getElementById("marine-park").style.backgroundColor = " #D5D3D9";
+
+wrappers = document.querySelector(".wrapper");
+
+wrappers.style.backgroundColor = "#BF9CA4";
+
+const gameClicker = document.getElementById("game-title");
+
+function popShell() {
+  //alert ("Hey there!");
+  gameClicker.style.color = "#355B97";
+  gameClicker.innerHTML = "Let's play Shell Tac Toe!"
+}
+
+gameClicker.addEventListener("mouseover",popShell);
+
+
+
 //API = Application Programming Interface
 //Type 1: third party API's, allow us to access functionality designed by someone else (and hosted on web) on our own website. Eg to display weather, or a map etc. Covered in future lesson
 

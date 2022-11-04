@@ -52,6 +52,8 @@ h2 {
     padding: 1em;
 }
 
+
+
 p {
     text-align: center;
     color: palevioletred;
@@ -186,7 +188,7 @@ BUT NOW I HAVE LOST TEXT LABLLING THE BUTTON - HOW DO I GET IT BACK?*/
     font-size: 3em;
     padding: 1em;
 }
-#game-access {
+#game-title {
     color: palevioletred;
     font-size: 2em;
     display: flex;
