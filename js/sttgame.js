@@ -127,3 +127,14 @@ cellElements.forEach(cell => {
 resultElement.innerText = ""
 });
 
+//Manipulating the DOM to change style - using classList, eventListener & querySelector
+
+let restartBtn = document.querySelector(".restart");
+
+//restartBtn.classList.toggle("restart-pop");
+
+function poppyRestart() {
+  restartBtn.classList.toggle("restart-pop");
+}
+
+restartButton.addEventListener("click", poppyRestart);

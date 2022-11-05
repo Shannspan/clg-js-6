@@ -96,8 +96,8 @@ p {
     bottom: 0;
     margin: 0;
     }
-/*note: images used for buttons are easier to manage in html than as background images in css. image for shell button now in html
-BUT NOW I HAVE LOST TEXT LABLLING THE BUTTON - HOW DO I GET IT BACK?*/
+/*note: images used for buttons are easier to manage in html than as background images in css. image for shell button now in html*/
+
 #shell-btn {
     color:#320E3B;   
     text-align: center;
@@ -109,18 +109,14 @@ BUT NOW I HAVE LOST TEXT LABLLING THE BUTTON - HOW DO I GET IT BACK?*/
     border-radius: 50%;     
     margin: 2em; 
 }
-/*#shell-link {
-   figure out how tp turn off or change a hover for this button
-
-}*/
 
 #shell-choice {   
     border: none;
     margin: 2em;
     padding: 1em;
 }
-/*game styling*/
 
+/*game styling*/
 
 #game {
     font-family: Arial, Helvetica, sans-serif;
@@ -137,7 +133,7 @@ BUT NOW I HAVE LOST TEXT LABLLING THE BUTTON - HOW DO I GET IT BACK?*/
     text-align: left;
 }
 
-#restart {
+.restart {
     color:#320E3B;
     background-color: paleturquoise;
     border: none;
@@ -147,9 +143,13 @@ BUT NOW I HAVE LOST TEXT LABLLING THE BUTTON - HOW DO I GET IT BACK?*/
     max-width: 10em;
 }
 
-#restart:hover {
+.restart-pop {
+    background-color: plum;
+    font-size: 2.5em;
+}
+
+.restart:hover {
     cursor: pointer;
-    background-color: cadetblue;
 }
 
 #board {
@@ -197,6 +197,7 @@ BUT NOW I HAVE LOST TEXT LABLLING THE BUTTON - HOW DO I GET IT BACK?*/
     align-items: center;
     text-align: center;
 }
+
 
 @media screen and (min-width: 40em) {
 
